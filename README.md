@@ -6,6 +6,9 @@
 | [sable-dev-net-2](nets/sable-dev-net-2.bin) | `((768 PSQT)x1hm -> 1024)x2 -> ((SCOREx1))` | 1 stage, 480 SB; cosine LR decay from 0.001 to 0.00001; constant WDL of 0 | [Sable Goliath Data][goliath-data] | +58 elo at 25K nodes, +18 elo at STC, +28 elo at LTC | Testing higher hl with no other changes |
 | [sable-dev-net-3](nets/sable-dev-net-3.bin) | `((768 PSQT)x2hm -> 1024)x2 -> ((SCOREx1))` | 1 stage, 480 SB; cosine LR decay from 0.001 to 0.00001; constant WDL of 0 | [Sable Goliath Data][goliath-data] | | Testing 2 input buckets |
 | [sable-dev-net-4](nets/sable-dev-net-4.bin) | `((768 PSQT)x4hm -> 1024)x2 -> ((SCOREx1))` | 1 stage, 480 SB; cosine LR decay from 0.001 to 0.00001; constant WDL of 0 | [Sable Goliath Data][goliath-data] | | Testing 4 input buckets |
+| [sable-dev-net-5](sable-dev-net-5) | `((768 PSQT)x8hm -> 1024)x2 -> ((SCOREx1))` | 1 stage, 480 SB; cosine LR decay from 0.001 to 0.00001; constant WDL of 0 | [Sable Goliath Data][goliath-data] | | Testing 8 input buckets |
+| [sable-dev-net-6](sable-dev-net-6) | `((768 PSQT)x8hm -> 1024)x2 -> ((SCOREx1))` | 1 stage, 480 SB; cosine LR decay from 0.001 to 0.00001; linear WDL from 0 to 0.4 | [Sable Goliath Data][goliath-data] | | Testing linear WDL from 0 to 0.4 |
+| [sable-dev-net-7](sable-dev-net-7) | `((768 PSQT)x8hm -> 1024)x2 -> ((SCOREx4))` | 1 stage, 480 SB; cosine LR decay from 0.001 to 0.00001; linear WDL from 0 to 0.4 | [Sable Goliath Data][goliath-data] | | Testing 4 output buckets |
 
 [goliath-data]: https://openbench.nocturn9x.space/training/datasets/73a22972-7710-4e89-b90b-a9e70fa77ce7/
 
