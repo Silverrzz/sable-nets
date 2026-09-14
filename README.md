@@ -10,6 +10,7 @@
 | [sable-dev-net-6](nets/sable-dev-net-6.bin) | `((768 PSQT)x8hm -> 1024)x2 -> ((SCOREx1))` | 1 stage, 480 SB; cosine LR decay from 0.001 to 0.00001; linear WDL from 0 to 0.4 | [Sable Goliath Data][goliath-data] (only the most recent 2.1B positions of 12ksn data) | | Testing linear WDL from 0 to 0.4 |
 | [sable-dev-net-7](nets/sable-dev-net-7.bin) | `((768 PSQT)x8hm -> 1024)x2 -> ((SCOREx4))` | 1 stage, 480 SB; cosine LR decay from 0.001 to 0.00001; linear WDL from 0 to 0.4 | [Sable Goliath Data][goliath-data] (only the most recent 2.1B positions of 12ksn data) | | Testing 4 output buckets |
 | [sable-dev-net-10](nets/sable-dev-net-10.bin) | `((768 PSQT)x1hm -> 1024)x2 -> ((SCOREx1))` | 1 stage, 480 SB; cosine LR decay from 0.001 to 0.00001; constant WDL of 0 | All 12.17B positions ever generated | | Identical to net 2 except for the dataset |
+| [sable-dev-net-11.1](nets/sable-dev-net-11.1.bin) | `((768 PSQT)x1hm -> 1024)x2 -> ((SCOREx1))` | 1 stage, 960 SB; cosine LR decay from 0.001 to 0.00001; constant WDL of 0 | All 12.17B positions ever generated | | Identical to net 10 except trained on 960 SB instead of 480 |
 
 [goliath-data]: https://openbench.nocturn9x.space/training/datasets/73a22972-7710-4e89-b90b-a9e70fa77ce7/
 
